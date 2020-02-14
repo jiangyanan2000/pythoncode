@@ -13,3 +13,14 @@ print(index)
 new_name = old_name[:index] + "[备份]" + old_name[index:]
 print(new_name)
 #3、备份文件写入数据（数据和元文件一样）
+#3.1打开原文件和备份文件
+old_f = open(old_name,"rb")
+new_f = open(new_name,"wb")
+#如果不确定目标文件大小，循环写入，当读取出来的数据没有了终止循环
+while True:
+    con = old_f.read(1024)
+    if len(con) == 0:
+        break
+    new_f.write(con)
+old_f.close()
+new_f.close()
