@@ -5,12 +5,15 @@ old_name = input("请输入你要备份的文件名字：")
 #2、规划备份文件的名字
 #2.1提取后缀 找到名字中的点 名字和后缀分离 最后侧的点才是后缀的点  字符串中查找某个子串 rfind
 index = old_name.rfind(".")
-print(index)
+if index > 0:
+    postfix = old_name[index:]
+# print(index)
 #2.2组织新名字 = 原名字 + 【备份】+ 后缀
 #原名字就是字符串中的一部分子串 切片【开始;结束；步长】
 # print(old_name[:index])
 # print(old_name[index:])
-new_name = old_name[:index] + "[备份]" + old_name[index:]
+# new_name = old_name[:index] + "[备份]" + old_name[index:]
+new_name = old_name[:index] + "[备份]" + postfix
 print(new_name)
 #3、备份文件写入数据（数据和元文件一样）
 #3.1打开原文件和备份文件
