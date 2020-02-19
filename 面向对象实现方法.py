@@ -31,4 +31,4 @@ haier = Washer()
 # 使用wash功能 --实例方法、实例方法 --对象名.Wash()
 print(haier)
 haier.wash()
-print(type(haier))
+
