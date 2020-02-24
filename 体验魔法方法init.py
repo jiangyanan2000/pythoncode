@@ -7,13 +7,13 @@
 3.验证成果
    调用实例方法
 """
-class Washer():
-    def __init__(self):
-        #添加实例属性
-        self.width = 400
-        self.height = 500
-    def print_info(self):
-        print(f"洗衣机的宽度是{self.width}")
-        print(f"洗衣机的高度是{self.height}")
-haier = Washer()
-haier.print_info()
+# class Washer():
+#     def __init__(self):
+#         #添加实例属性
+#         self.width = 400
+#         self.height = 500
+#     def print_info(self):
+#         print(f"洗衣机的宽度是{self.width}")
+#         print(f"洗衣机的高度是{self.height}")
+# haier = Washer()
+# haier.print_info()
