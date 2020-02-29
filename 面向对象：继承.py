@@ -14,3 +14,18 @@
 如果存在一个子类和它的父类，如果这个子类创建了实例，即便是子类中么有任何代码，实例也会继承父类的属性和方法
 """
 #拓展 经典类和新式类
+#继承：子类默认继承所有父类的属性和方法
+#定义父类
+class A():
+    def __init__(self):
+        self.num = 1
+    def print_info(self):
+        print(self.num)
+#定义子类
+class B(A):
+    pass
+
+#创建实例，验证结果
+result = B()
+result.print_info()
+
