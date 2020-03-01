@@ -18,10 +18,10 @@ while j < 5:
     # 一行星星结束：换行显示下一行
     print()
     j += 1
-# row = 5
-# for i in range(row):
-#     for _ in range(row - i - 1):
-#         print('0', end='')
-#     for _ in range(2 * i + 1):
-#         print('*', end='')
-#     print()
+row = 5
+for i in range(row):
+    for _ in range(row - i - 1):
+        print(' ', end='')
+    for _ in range(2 * i + 1):
+        print('*', end='')
+    print()

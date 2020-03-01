@@ -1,5 +1,5 @@
 """
-故事：很多顾客都希望也能吃到古法和黑马的技术的煎饼果子
+故事： N年以后daqiu老了，想要把所有的技术传承给自己的徒弟
 """
 class Master(object):
     def __init__(self):
@@ -32,8 +32,11 @@ class Prentice(School,Master):
         School.__init__(self)
         School.make_cake(self)
 
-daqiu = Prentice()
-daqiu.make_cake()
-daqiu.make_master_cake()
-daqiu.make_school_cake()
-daqiu.make_cake()
+
+class Disciple(Prentice):
+    pass
+
+xiaoqiu = Disciple()
+xiaoqiu.make_cake()
+xiaoqiu.make_school_cake()
+xiaoqiu.make_master_cake()

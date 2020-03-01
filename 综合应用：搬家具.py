@@ -19,7 +19,7 @@ class Home():
         self.address = address
         self.area = area
         self.free_area = area #初始化时，没有家具放入，所以剩余面积和房屋面积是一样的，在后面放入家具是才涉及到剩余面积的计算
-        self.furniture= []
+        self.furniture = []
     def __str__(self):
         return f"房子的地理位置在{self.address},房屋面积是{self.area},剩余面积是{self.free_area},家具有{self.furniture}"
 
