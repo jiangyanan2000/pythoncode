@@ -1,6 +1,6 @@
-def f(a):
-    a = 88
+import time
+f = open("test1.txt","r",encoding="utf-8")
+content = f.readlines()
+for i in content:
+    print(i)
 
-b = 100
-f(b)
-print(b)

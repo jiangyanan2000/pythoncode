@@ -1,0 +1,11 @@
+#需求：尝试打开test.txt(r),如果文件不存在，只写方式打开w
+"""
+try:
+    可能会发生错误的代码
+except:
+     发生错误之后执行的代码
+"""
+try:
+    open("test1.txt","r")
+except:
+    open("test1.txt","w")
