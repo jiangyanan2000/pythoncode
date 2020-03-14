@@ -20,6 +20,6 @@ def main():
     else:
         print("密码输入已完成！")
 #3.捕获异常
-# main()
-sie = SortInputError(3,4)
-print(sie)
+main()
+# sie = SortInputError(3,4)
+# print(sie)
