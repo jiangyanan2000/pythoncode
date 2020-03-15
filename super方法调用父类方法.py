@@ -10,8 +10,8 @@ class School(Master):
         print(f"运用{self.kongfu}制作煎饼果子")
         # super(School,self).__init__()
         # super(School,self).make_cake()
-        # super().__init__()
-        # super().make_cake()
+        super().__init__()
+        super().make_cake()
 #创建学生类,添加和父类同名的属性和方法
 class Prentice(School):
     def __init__(self):

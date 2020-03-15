@@ -47,7 +47,7 @@ def del_info():
         else :
             info_print()
 
-    print(info)
+    # print(info)
 
 def modify_info():
     modify_name = input("请输入您要修改的学员的名字：")
