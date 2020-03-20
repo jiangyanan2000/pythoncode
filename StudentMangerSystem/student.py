@@ -1,5 +1,5 @@
 class Student(object):
-    def __index__(self,name,gender,tel):
+    def __init__(self,name,gender,tel):
         self.name = name
         self.gender = gender
         self.tel = tel
